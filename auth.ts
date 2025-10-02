@@ -1,6 +1,6 @@
 import NextAuth, { CredentialsSignin } from "next-auth"
 import Credentials from "next-auth/providers/credentials"
-// import User from "@/models/user.model"
+// k/jhimport User from "@/models/user.model"
 import bcrypt from "bcrypt" 
 import connectDB from "@/lib/db"
 class InvalidLoginError extends CredentialsSignin {

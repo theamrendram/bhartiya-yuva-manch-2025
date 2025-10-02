@@ -14,13 +14,13 @@ export default function HomePage() {
   return (
     <>
       <HeroSection/>
-      <Prizes/>
+      {/* <Prizes/> */}
       <About />
-      <GallerySection />
-      <Speakers/>
+      {/* <Speakers/> */}
       <TeamCarousel/>
-      <RegistrationGuidelines/>
-      <Schedule/>
+      {/* <RegistrationGuidelines/> */}
+      <GallerySection />
+      {/* <Schedule/> */}
       <FAQ/>
       <VenuePage/>
       <Footer/>

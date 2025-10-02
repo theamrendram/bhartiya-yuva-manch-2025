@@ -22,43 +22,6 @@ const About = () => {
 
       <Container>
         <div className="relative z-10 flex flex-col gap-8 md:gap-12 items-stretch text-left">
-          {/* IEEE CS Chapter Card */}
-          <motion.article
-            className="bg-gray-100 dark:bg-gray-800 rounded-xl shadow-md p-6 sm:p-8 transition-transform hover:scale-[1.02] focus-within:ring-2 focus-within:ring-blue-400 outline-none"
-            initial={{ opacity: 0, y: 32 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ ...cardTransition, delay: 0 }}
-            tabIndex={0}
-            aria-label="IEEE Computer Society Chapter Card"
-          >
-            <FaUsers className="text-4xl sm:text-5xl text-blue-500 mb-4" />
-            <div className="flex items-center mb-2">
-              <h3 className="font-bold text-lg sm:text-xl text-gray-900 dark:text-gray-100">
-                IEEE Computer Society Chapter
-              </h3>
-              <span className="ml-2 w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
-            </div>
-            <p className="text-sm sm:text-base text-gray-800 dark:text-gray-300 leading-relaxed">
-              The IEEE Computer Society (CS) Chapter serves as a dynamic
-              platform for advancing knowledge and fostering innovation in the
-              fields of Computer Science and Information Technology. By bringing
-              together students, educators, and industry professionals, the
-              chapter facilitates an environment where members can engage with
-              the latest technological developments and research trends.
-              <br />
-              <br />
-              The IEEE CS Chapter regularly organizes expert lectures, technical
-              workshops, hands-on sessions, and collaborative projects, all
-              aimed at nurturing professional growth and encouraging lifelong
-              learning. Through its wide network, the chapter also provides
-              valuable opportunities for mentorship, industry interactions, and
-              collaborative research, empowering participants to stay ahead in
-              the rapidly evolving digital landscape.
-            </p>
-          </motion.article>
-
-          {/* Summer School Card */}
           <motion.article
             className="bg-gray-100 dark:bg-gray-800 rounded-xl shadow-md p-6 sm:p-8 transition-transform hover:scale-[1.02] focus-within:ring-2 focus-within:ring-pink-400 outline-none"
             initial={{ opacity: 0, y: 32 }}
@@ -68,22 +31,15 @@ const About = () => {
             tabIndex={0}
             aria-label="About the Summer School Card"
           >
-            <FaGraduationCap className="text-4xl sm:text-5xl text-pink-500 mb-4" />
-            <div className="flex items-center mb-2">
-              <h3 className="font-bold text-lg sm:text-xl text-gray-900 dark:text-gray-100">
-                About the Summer School
-              </h3>
-              <span className="ml-2 w-2 h-2 rounded-full bg-pink-400 animate-pulse" />
-            </div>
             <p className="text-sm sm:text-base text-gray-800 dark:text-gray-300 leading-relaxed">
-              The 2025 IEEE Computer Society Region 10 Summer School on
-              &ldquo;Data Science for Decision-Making: Methodologies and
+              The 2025 Bhartiya Yuva Manch on
+              &ldquo;Bhartiya Yuva Manch 2025&rdquo; is a prestigious five-day program hosted by
               Applications&rdquo; is a prestigious five-day program hosted by
               Bharati Vidyapeeth&rsquo;s Institute of Computer Applications and
               Management (BVICAM), New Delhi.
               <br />
               <br />
-              This summer school is designed to immerse participants in the core
+              This Bhartiya Yuva Manch is designed to immerse participants in the core
               concepts, advanced methodologies, and latest research trends in
               Data Science, with a special focus on its applications in
               effective decision-making. The program features a balanced blend

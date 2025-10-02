@@ -7,8 +7,8 @@ import SessionWrapper from "@/components/SessionWrapper";
 import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
-  title: "Summer School 2025 - IEEE BVICAM",
-  description: "Summer School 2025 - IEEE BVICAM",
+  title: "Bhartiya Yuva Manch 2025",
+  description: "Bhartiya Yuva Manch 2025",
 };
 
 export default function RootLayout({
