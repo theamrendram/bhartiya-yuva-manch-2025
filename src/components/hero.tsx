@@ -28,7 +28,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex min-h-[60vh] h-auto md:h-[80vh] flex-col items-center justify-center space-y-6 md:space-y-8 rounded-3xl bg-black/30 p-4 sm:p-8 text-center shadow-xl backdrop-blur-md"
+          className="flex min-h-[60vh] h-auto md:h-[80vh] flex-col items-center justify-center space-y-6 md:space-y-6 rounded-3xl bg-black/30 p-4 sm:p-8 text-center shadow-xl backdrop-blur-md"
         >
           <div className="space-y-3 md:space-y-4">
             <h1 className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight text-transparent drop-shadow-lg">
@@ -36,15 +36,17 @@ export default function HeroSection() {
             </h1>
             <p className="mx-auto max-w-2xl text-base sm:text-lg md:text-xl font-medium text-gray-300">
               <span className="mb-2 inline-block rounded-full bg-white/10 px-3 py-1 text-sm sm:text-base font-semibold text-blue-200 shadow-sm">
-                Learn. Build. Connect.
+                {/* Learn. Build. Connect. */}
+                Explore. Innovate. Collaborate.
               </span>
               <br />
-              An intensive learning experience designed to enhance your
-              technical skills and knowledge!
+              {/* An intensive learning experience designed to enhance your
+              technical skills and knowledge! */}
+              A transformative learning experience to advance your skills and ignite innovation!
             </p>
           </div>
 
-          <div className="z-[999] flex flex-col gap-3 sm:flex-row sm:justify-center sm:gap-4 w-full max-w-xs sm:max-w-none mx-auto">
+          {/* <div className="z-[999] flex flex-col gap-3 sm:flex-row sm:justify-center sm:gap-4 w-full max-w-xs sm:max-w-none mx-auto">
             <motion.div whileHover={{ scale: 1.06 }} whileTap={{ scale: 0.97 }}>
               <Link
                 href="/register"
@@ -61,9 +63,9 @@ export default function HeroSection() {
                 View Schedule
               </Link>
             </motion.div>
-          </div>
+          </div> */}
 
-          <div className="space-y-4 pt-6 md:pt-8">
+          <div className="space-y-4 pt-5 md:pt-5">
             <span className="inline-block rounded-full bg-gradient-to-r from-blue-600 via-purple-500 to-pink-400 px-3 sm:px-4 py-1 text-base sm:text-lg font-bold text-white shadow-md">
               28th July - 1st August 2025
             </span>

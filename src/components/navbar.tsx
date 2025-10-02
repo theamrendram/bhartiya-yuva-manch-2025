@@ -13,13 +13,13 @@ import {
 const navItems = [
   { href: "/#hero", title: "Home" },
   { href: "/#about", title: "About" },
-  { href: "/#gallery", title: "Gallery" },
+  /* { href: "/#gallery", title: "Gallery" },
   { href: "/#speakers", title: "Speakers" },
   { href: "/#guidelines", title: "Guidelines" },
-  { href: "/#schedule", title: "Schedule" },
+  { href: "/#schedule", title: "Schedule" }, */
   { href: "/#faq", title: "FAQ" },
-  { href: "/#venue", title: "Venue" },
-  { href: "/#contact", title: "Contact Us" },
+ /*  { href: "/#venue", title: "Venue" },
+  { href: "/#contact", title: "Contact Us" }, */
 ];
 
 export function Navbar({
@@ -54,7 +54,7 @@ export function Navbar({
         duration: 0.3,
         ease: "easeInOut",
       }}
-      className="bg-opacity-10 fixed inset-x-0 top-4 mx-auto flex max-w-6xl items-center justify-between rounded-full border border-white/20 bg-white/80 px-3 py-2 backdrop-blur-md sm:px-4 dark:border-gray-700/30 dark:bg-black/80 z-50">
+      className="bg-opacity-10 fixed inset-x-0 top-4 mx-auto flex max-w-6xl items-center justify-between rounded-full border border-white/20 bg-white/80 px-3 py-2 md:px-6 lg:px-8 backdrop-blur-md sm:px-4 dark:border-gray-700/30 dark:bg-black/80 z-50">
       <Link href={"/"}>
         <Image
           className="h-10 w-10 rounded-full"
@@ -64,11 +64,11 @@ export function Navbar({
           alt="avatar"
         />
       </Link>
-      <div className="flex items-center">
+      <div className="flex items-center justify-between md:gap-4 lg:gap-6">
         {navItems.map((item, idx) => (
           <Link
             key={idx}
-            className="relative px-2 py-1 text-sm text-neutral-700 dark:text-neutral-300"
+            className="relative px-2 lg:px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300"
             href={item.href}
             onMouseEnter={() => setHovered(idx)}
             onMouseLeave={() => setHovered(null)}>
@@ -83,16 +83,16 @@ export function Navbar({
           </Link>
         ))}
       </div>
-      <div className="flex gap-2 items-center">
+      <div className="flex gap-2 lg:gap-4 items-center">
         <Link
           href="/login"
-          className="hoverable px-4 py-1.5 rounded-md bg-primary text-white hover:bg-primary-hover dark:bg-gradient-to-r dark:from-blue-600 dark:via-blue-600 dark:to-blue-800 dark:hover:bg-blue-700 transition-colors shadow-md">
+          className="hoverable px-4 md:px-5 py-1.5 rounded-md bg-primary text-white hover:bg-primary-hover dark:bg-gradient-to-r dark:from-blue-600 dark:via-blue-600 dark:to-blue-800 dark:hover:bg-blue-700 transition-colors shadow-md">
           Login
         </Link>
         <motion.button
           aria-label="Toggle theme"
           onClick={onToggleTheme}
-          className="ml-4 p-2 rounded-full border border-transparent hover:bg-neutral-200 dark:hover:bg-neutral-800 transition-colors shadow"
+          className="p-2 rounded-full border border-transparent hover:bg-neutral-200 dark:hover:bg-neutral-800 transition-colors shadow"
           whileTap={{ scale: 0.9 }}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}>
           {isDark ? (
