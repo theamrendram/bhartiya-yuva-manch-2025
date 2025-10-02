@@ -119,13 +119,13 @@ export default function RegistrationGuidelines() {
         {/* Registration Rules */}
         <Card className="w-full">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-2xl">
+            <CardTitle className="flex items-center gap-2 text-xl sm:text-2xl">
               <Users className="h-5 w-5" />
               Registration Rules
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-2">
-            <ul className="text-muted-foreground list-inside list-disc space-y-2">
+            <ul className="text-muted-foreground sm:text-base sm:leading-normal leading-relaxed text-sm md:text-lg list-outside pl-3 list-disc space-y-1.5 sm:space-y-2">
               <li>Registration Per Person only</li>
               <li>Registration is non-transferable and non-refundable</li>
             </ul>
@@ -135,16 +135,16 @@ export default function RegistrationGuidelines() {
         {/* Event Registration */}
         <Card className="w-full">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-2xl">
+            <CardTitle className="flex items-center gap-2 text-xl sm:text-2xl">
               <CalendarDays className="h-5 w-5" />
               Event Registration
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-2">
-            <ul className="text-muted-foreground list-inside list-disc space-y-2">
+            <ul className="text-muted-foreground text-sm sm:text-base leading-relaxed sm:leading-normal list-outside pl-3 list-disc space-y-1.5 sm:space-y-2">
               <li className="text-red-500">
                Last Date of Registration: 16th July 2025
-               <span className="text-red-500 font-bold px-4">*Registrations closed*</span>
+               <span className="text-red-500 font-bold px-3">*Registrations closed*</span>
               </li>
               <li>
                 Workshop seats will be allocated on a first-come, first-served
@@ -189,7 +189,7 @@ export default function RegistrationGuidelines() {
           <CardTitle className="flex items-center gap-2 text-2xl">
             Registration Fees
           </CardTitle>
-          <CardDescription className="text-lg"></CardDescription>
+          {/* <CardDescription className="text-lg"></CardDescription> */}
         </CardHeader>
         <CardContent>
           <Table className="mt-4 md:text-md">
@@ -223,7 +223,7 @@ export default function RegistrationGuidelines() {
             </TableBody>
           </Table>
 
-          <p  className="mt-4 text-base text-red-500">
+          <p className="mt-3 sm:mt-4 text-sm sm:text-base leading-relaxed text-red-500">
             <strong>Accommodation:</strong><br/>
           All the out-stationed participants shall be provided dormitory accommodation, on shared bases, absolutely free, inside the Campus, during the entire duration of the Summer School.
           However, participants, who want Hotel Accommodation, may directly book the Hotel on payment basis, details of which is given here under:-
@@ -232,9 +232,9 @@ export default function RegistrationGuidelines() {
       </Card>
 
       {/* Nearby Accommodations */}
-      <Card className="mt-6 text-lg">
+      <Card className="mt-6 text-base">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2 text-2xl">
+          <CardTitle className="flex items-center gap-2 text-lg md:text-2xl">
             Nearby Accommodations
           </CardTitle>
           {/* <CardDescription className="text-sm text-red-500">
@@ -246,20 +246,20 @@ export default function RegistrationGuidelines() {
           <Table className="md:text-md mt-4">
             <TableHeader>
               <TableRow>
-                <TableHead>Hotel Name</TableHead>
-                <TableHead>Distance from Venue</TableHead>
-                <TableHead>Room Charges (per night) *without taxes</TableHead>
-                <TableHead>Contact</TableHead>
+                <TableHead className="p-2 whitespace-nowrap">Hotel Name</TableHead>
+                <TableHead className="p-2 whitespace-nowrap">Distance from Venue</TableHead>
+                <TableHead className="p-2 whitespace-nowrap">Room Charges (per night) *without taxes</TableHead>
+                <TableHead className="p-2 whitespace-nowrap">Contact</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
-                <TableCell>Hotel Swathi</TableCell>
+                <TableCell className="p-2 whitespace-nowrap">Hotel Swathi</TableCell>
                 <TableCell>300 m from BVICAM</TableCell>
                 <TableCell>Standard Room: Without Breakfast: Rs. 1800</TableCell>
                 <TableCell>
                   {" "}
-                  <p className="mt-2 text-sm text-neutral-400">
+                  <p className="text-sm text-neutral-400">
                     Avneesh:{" "}
                     <a
                       href="tel:+919560217756"
@@ -271,12 +271,12 @@ export default function RegistrationGuidelines() {
                 </TableCell>
               </TableRow>
               <TableRow>
-                <TableCell>Hotel Golden Saffron By Qotel</TableCell>
-                <TableCell>1.8 km from BVICAM</TableCell>
+                <TableCell className="p-2 whitespace-nowrap">Hotel Golden Saffron By Qotel</TableCell>
+                <TableCell className="p-2 whitespace-nowrap">1.8 km from BVICAM</TableCell>
                 <TableCell>Standard Room: Without Breakfast: Rs 3000</TableCell>
                 <TableCell>
                   {" "}
-                  <p className="mt-2 text-sm text-neutral-400">
+                  <p className="text-sm text-neutral-400">
                     Priya:{" "}
                     <a
                       href="tel:+919311414031"
@@ -298,7 +298,7 @@ export default function RegistrationGuidelines() {
                 </TableCell>
                 <TableCell>
                   {" "}
-                  <p className="mt-2 text-sm text-neutral-400">
+                  <p className="text-sm text-neutral-400">
                     Vijay:{" "}
                     <a
                       href="tel:+919810158766"

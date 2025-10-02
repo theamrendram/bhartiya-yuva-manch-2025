@@ -57,20 +57,20 @@ const faqData = [
 
 export default function FAQ() {
   return (
-    <section className="relative bg-background w-full py-12 md:py-24 lg:py-10 overflow-hidden" id="faq">
+    <section className="relative bg-background w-full py-10 md:py-16 lg:py-20 overflow-hidden" id="faq">
       <BackgroundLines className="absolute inset-0 z-0">
         <></>
       </BackgroundLines>
 
       <div className="relative z-10 container mx-auto px-4 md:px-6">
-        <div className="grid items-start gap-12 lg:grid-cols-2">
+        <div className="grid items-start gap-8 md:gap-12 lg:grid-cols-2">
 
           <div className="space-y-6">
-            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-pink-500 via-purple-500 to-blue-500">
+            <div className="flex h-12 w-12 sm:h-14 sm:w-14 md:h-14 md:w-14 lg:h-16 lg:w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-pink-500 via-purple-500 to-blue-500">
               <div className="h-8 w-8 rounded-lg bg-white opacity-90"></div>
             </div>
             <div className="space-y-4">
-              <h2 className="text-foreground text-3xl font-bold tracking-tight md:text-4xl">
+              <h2 className="text-foreground text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
                 Frequently asked questions
               </h2>
               <Button
@@ -94,7 +94,7 @@ export default function FAQ() {
                 <AccordionItem
                   key={faq.id}
                   value={faq.id}
-                  className="border-border bg-card rounded-lg border px-6 py-2"
+                  className="border-border bg-card rounded-lg border px-4 py-2 md:px-6"
                 >
                   <AccordionTrigger className="text-foreground py-4 text-left font-medium hover:no-underline">
                     {faq.question}

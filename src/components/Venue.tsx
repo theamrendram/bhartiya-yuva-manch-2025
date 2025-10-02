@@ -27,7 +27,7 @@ export default function VenuePage() {
                 <ClockIcon className="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
                 Transportation:
               </h4>
-              <ul className="list-disc list-inside ml-6 space-y-1 text-gray-700 dark:text-zinc-300">
+              <ul className="list-disc list-outside pl-3 ml-6 space-y-1 text-gray-700 dark:text-zinc-300">
                 <li>2 minutes from Paschim Vihar Metro Station</li>
                 <li>30 minutes from New Delhi Railway Station</li>
                 <li>45 minutes from IGI Airport</li>

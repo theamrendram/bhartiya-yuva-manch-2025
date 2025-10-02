@@ -16,7 +16,7 @@ export default function HeroSection() {
 
   return (
     <section
-      className="relative min-h-[calc(100vh-100px)] overflow-hidden bg-neutral-900 pt-24 py-12 md:py-24 lg:py-32"
+      className="relative min-h-[calc(100vh-100px)] overflow-hidden bg-neutral-900 pt-24 py-8 md:py-24 lg:py-32"
       id="hero"
     >
       <BackgroundBeams />

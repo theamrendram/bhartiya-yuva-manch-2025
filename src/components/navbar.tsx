@@ -57,7 +57,7 @@ export function Navbar({
       className="bg-opacity-10 fixed inset-x-0 top-4 mx-auto flex max-w-6xl items-center justify-between rounded-full border border-white/20 bg-white/80 px-3 py-2 md:px-6 lg:px-8 backdrop-blur-md sm:px-4 dark:border-gray-700/30 dark:bg-black/80 z-50">
       <Link href={"/"}>
         <Image
-          className="h-10 w-10 rounded-full"
+          className="h-10 w-12 rounded-full"
           src="/bvicam.png"
           height={40}
           width={40}

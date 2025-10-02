@@ -69,9 +69,9 @@ export default function GallerySection() {
       case "small":
         return "col-span-1 row-span-1";
       case "medium":
-        return "col-span-1 row-span-2";
+        return "col-span-1 md:row-span-2";
       case "large":
-        return "col-span-2 row-span-2";
+        return "md:col-span-2 md:row-span-2";
       default:
         return "col-span-1 row-span-1";
     }
@@ -102,7 +102,7 @@ export default function GallerySection() {
         </motion.div>
 
         {/* Bento Grid Gallery */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[200px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[200px]">
           {galleryItems.map((item, index) => (
             <motion.div
               key={item.id}
@@ -122,7 +122,7 @@ export default function GallerySection() {
               onClick={() => setSelectedItem(item)}
             >
               {/* Image */}
-              <div className="relative w-full h-full">
+              <div className="relative w-full h-full aspect-[4/3] sm:aspect-[16/9]">
                 <Image
                   src={item.src}
                   alt={item.alt}
