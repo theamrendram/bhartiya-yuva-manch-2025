@@ -8,6 +8,7 @@ import FAQ from "@/components/faq";
 import GallerySection from "@/components/gallery";
 import Footer from "@/components/footer";
 import Prizes from "@/components/prizes";
+import TeamCarousel from "@/components/TeamCarousel";
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
       <About />
       <GallerySection />
       <Speakers/>
+      <TeamCarousel/>
       <RegistrationGuidelines/>
       <Schedule/>
       <FAQ/>
