@@ -1,5 +1,6 @@
 import HeroSection from "@/components/hero";
 import RegistrationGuidelines from "@/components/registration-guidelines";
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import { About } from "@/components/about";
 import { Schedule } from "@/components/schedule";
 import Speakers from "@/components/Speakers";
@@ -13,17 +14,19 @@ import TeamCarousel from "@/components/TeamCarousel";
 export default function HomePage() {
   return (
     <>
-      <HeroSection/>
+      <BackgroundBeamsWithCollision>
+        <HeroSection />
+      </BackgroundBeamsWithCollision>
       {/* <Prizes/> */}
       <About />
       {/* <Speakers/> */}
-      <TeamCarousel/>
+      <TeamCarousel />
       {/* <RegistrationGuidelines/> */}
       <GallerySection />
       {/* <Schedule/> */}
-      <FAQ/>
-      <VenuePage/>
-      <Footer/>
+      <FAQ />
+      <VenuePage />
+      <Footer />
     </>
   );
 }
